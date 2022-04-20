@@ -1,4 +1,0 @@
-Hello Daddy!
-Hi my good girl!
-printf("The area of circle is: .%2f", x);
-
