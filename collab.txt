@@ -1,5 +1,4 @@
 Error at line 500.
 But there is only 345 lines of code???
-<<<<<<< HEAD
 Pre, nicopy ko ung code mo ah.
 Ahhhh ok lang pre, kinuha ko lang rin yan sa stack e.
