@@ -5,8 +5,6 @@
 #BASCO, NOEL FRANCIS MARIE F.
 #DIZON, THEA JAZMINE G.
 
-from unicodedata import name
-
 
 class customize:
     def __init__ (self, character: str, weapon: str, ability1: str, ability2: str):
