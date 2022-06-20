@@ -45,6 +45,11 @@ class customize:
         elif choice == 4:
             self.weapon = "Katar"
 
+    def setAbility(self):
+        #put your code here
+        pass #remove pass when editing code
+
+
 char1 = customize("Null","Null","Null","Null")
 char2 = customize("Null","Null","Null","Null")
 
