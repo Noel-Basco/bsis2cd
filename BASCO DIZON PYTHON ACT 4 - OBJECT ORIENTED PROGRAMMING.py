@@ -6,6 +6,9 @@
 #DIZON, THEA JAZMINE G.
 
 
+from asyncio.windows_events import NULL
+
+
 class customize:
     def __init__ (self, character: str, weapon: str, ability1: str, ability2: str):
         self.character = character
@@ -45,21 +48,165 @@ class customize:
         elif choice == 4:
             self.weapon = "Katar"
 
-    def setAbility(self):
-        #put your code here
-        pass #remove pass when editing code
+    def setAbility(self,choice):
 
+        Ability_List = ["Energy Ball","Dragon's Breath","Crown of Flame","Hail Storm",]
+        Ability_List2 = ["Fire Slash","Power Slash","Gigantic Storm","Chaotic Disaster"]
+        Ability_List3 = ["Take Aim","Quick Shot","Blazing Arrow","Frost Arrow"]
+        Ability_List4 = ["Cloaking","Enchant Poison","Sonic Acceleration","Meteor Assault"]
+
+        if self.character == "Wizard":
+            checker = False
+            while checker == False:
+                print("\nAbilities list:\n1. %s\n2. %s\n3. %s\n4. %s\n"%(Ability_List[0],Ability_List[1],Ability_List[2],Ability_List[3]))
+                choice = int(input("Choose your first ability: "))
+
+                if choice == 1:
+                    self.ability1 = Ability_List[0]     
+                elif choice == 2:
+                    self.ability1 = Ability_List[1]     
+                elif choice == 3:
+                    self.ability1 = Ability_List[2]     
+                elif choice == 4:
+                    self.ability1 = Ability_List[3]     
+                else: 
+                    print("not in list! Try again.") 
+                    continue
+
+                print("\nAbilities list:\n1. %s\n2. %s\n3. %s\n4. %s\n"%(Ability_List[0],Ability_List[1],Ability_List[2],Ability_List[3]))
+                choice = int(input("Choose your second ability: "))
+
+                if choice == 1:
+                    self.ability2 = Ability_List[0]
+                elif choice == 2:
+                    self.ability2 = Ability_List[1]
+                elif choice == 3:
+                    self.ability2 = Ability_List[2]
+                elif choice == 4:
+                    self.ability2 = Ability_List[3]
+                else: 
+                    print("not in list! Try again.") 
+                    continue
+                checker = True
+        
+        if self.character == "Knight":
+            checker = False
+            while checker == False:
+                print("\nAbilities list:\n1. %s\n2. %s\n3. %s\n4. %s\n"%(Ability_List2[0],Ability_List2[1],Ability_List2[2],Ability_List2[3]))
+                choice = int(input("Choose your first ability: "))
+
+                if choice == 1:
+                    self.ability1 = Ability_List2[0]
+                elif choice == 2:
+                    self.ability1 = Ability_List2[1]
+                elif choice == 3:
+                    self.ability1 = Ability_List2[2]
+                elif choice == 4:
+                    self.ability1 = Ability_List2[3]
+                else: 
+                    print("not in list! Try again.") 
+                    continue
+                
+                print("\nAbilities list:\n1. %s\n2. %s\n3. %s\n4. %s\n"%(Ability_List2[0],Ability_List2[1],Ability_List2[2],Ability_List2[3]))
+                choice = int(input("Choose your second ability: "))
+
+                if choice == 1:
+                    self.ability2 = Ability_List2[0]
+                elif choice == 2:
+                    self.ability2 = Ability_List2[1]
+                elif choice == 3:
+                    self.ability2 = Ability_List2[2]
+                elif choice == 4:
+                    self.ability2 = Ability_List2[3]
+                else: 
+                    print("not in list! Try again.") 
+                    continue
+                checker = True
+
+        if self.character == "Archer":
+            checker = False
+            while checker == False:
+                print("\nAbilities list:\n1. %s\n2. %s\n3. %s\n4. %s\n"%(Ability_List3[0],Ability_List3[1],Ability_List3[2],Ability_List3[3]))
+                choice = int(input("Choose your first ability: "))
+
+                if choice == 1:
+                    self.ability1 = Ability_List3[0]
+                elif choice == 2:
+                    self.ability1 = Ability_List3[1]
+                elif choice == 3:
+                    self.ability1 = Ability_List3[2]
+                elif choice == 4:
+                    self.ability1 = Ability_List3[3]
+                else: 
+                    print("not in list! Try again.") 
+                    continue
+
+                print("\nAbilities list:\n1. %s\n2. %s\n3. %s\n4. %s\n"%(Ability_List3[0],Ability_List3[1],Ability_List3[2],Ability_List3[3]))
+                choice = int(input("Choose your second ability: "))
+
+                if choice == 1:
+                    self.ability2 = Ability_List3[0]
+                elif choice == 2:
+                    self.ability2 = Ability_List3[1]
+                elif choice == 3:
+                    self.ability2 = Ability_List3[2]
+                elif choice == 4:
+                    self.ability2 
+                else: 
+                    print("not in list! Try again.") 
+                    continue
+                checker = True
+            
+
+        if self.character == "Assassin":
+            checker = False
+            while checker == False:
+                print("\nAbilities list:\n1. %s\n2. %s\n3. %s\n4. %s\n"%(Ability_List4[0],Ability_List4[1],Ability_List4[2],Ability_List4[3]))
+                choice = int(input("Choose your first ability: "))
+
+                if choice == 1:
+                    self.ability1 = Ability_List4[0]
+                elif choice == 2:
+                    self.ability1 = Ability_List4[1]
+                elif choice == 3:
+                    self.ability1 = Ability_List4[2]
+                elif choice == 4:
+                    self.ability1 = Ability_List4[3]
+                else: 
+                    print("not in list! Try again.") 
+                    continue
+
+                print("\nAbilities list:\n1. %s\n2. %s\n3. %s\n4. %s\n"%(Ability_List4[0],Ability_List4[1],Ability_List4[2],Ability_List4[3]))
+                choice = int(input("Choose your second ability: "))
+
+                if choice == 1:
+                    self.ability2 = Ability_List4[0]
+                elif choice == 2:
+                    self.ability2 = Ability_List4[1]
+                elif choice == 3:
+                    self.ability2 = Ability_List4[2]
+                elif choice == 4:
+                    self.ability2 = Ability_List4[3]
+                else: 
+                    print("not in list! Try again.") 
+                    continue
+                checker = True
 
 char1 = customize("Null","Null","Null","Null")
 char2 = customize("Null","Null","Null","Null")
+choice = 5
+
+print("Character 1:")
 
 char1.setClass()
 char1.setWeapon()
-# char1.setAbility()
+char1.setAbility(choice)
+
+print("Character 2:")
 
 char2.setClass()
 char2.setWeapon()
-# char2.setAbility()
+char2.setAbility(choice)
 
 print("\n---Character List:---\n")
 print("\nCharacter 1:\n")
